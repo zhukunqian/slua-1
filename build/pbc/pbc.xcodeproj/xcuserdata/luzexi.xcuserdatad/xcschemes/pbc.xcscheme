@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E80919D31B745519008FED27"
-               BuildableName = "slua.bundle"
-               BlueprintName = "slua"
-               ReferencedContainer = "container:slua.xcodeproj">
+               BlueprintIdentifier = "D7EF1333179E5530002B6A46"
+               BuildableName = "libpbc.a"
+               BlueprintName = "pbc"
+               ReferencedContainer = "container:pbc.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,10 +42,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E80919D31B745519008FED27"
-            BuildableName = "slua.bundle"
-            BlueprintName = "slua"
-            ReferencedContainer = "container:slua.xcodeproj">
+            BlueprintIdentifier = "D7EF1333179E5530002B6A46"
+            BuildableName = "libpbc.a"
+            BlueprintName = "pbc"
+            ReferencedContainer = "container:pbc.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -60,10 +60,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E80919D31B745519008FED27"
-            BuildableName = "slua.bundle"
-            BlueprintName = "slua"
-            ReferencedContainer = "container:slua.xcodeproj">
+            BlueprintIdentifier = "D7EF1333179E5530002B6A46"
+            BuildableName = "libpbc.a"
+            BlueprintName = "pbc"
+            ReferencedContainer = "container:pbc.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
