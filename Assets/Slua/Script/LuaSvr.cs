@@ -55,6 +55,8 @@ namespace SLua
             LuaValueType.reg(L);
             SLuaDebug.reg(L);
             LuaDLL.luaS_openextlibs(L);
+			LuaDLL.luaopen_protobuf_c(L);
+			LuaDLL.luaopen_lpeg(L);
             return 0;
         }
 
