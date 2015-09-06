@@ -11,6 +11,7 @@
 		8E013A9C1B9CA54200F248D8 /* pbc-lua.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E013A9B1B9CA54200F248D8 /* pbc-lua.c */; };
 		8E013A9E1B9CA54D00F248D8 /* slua.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E013A9D1B9CA54D00F248D8 /* slua.c */; };
 		8E013AA01B9CA55B00F248D8 /* libslua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E013A9F1B9CA55B00F248D8 /* libslua.a */; };
+		8EAAAA9C1B9CA8380077D9BE /* libpbc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EAAAA9B1B9CA8380077D9BE /* libpbc.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		8E013A9B1B9CA54200F248D8 /* pbc-lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "pbc-lua.c"; path = "../../pbc-ios/binding/lua/pbc-lua.c"; sourceTree = "<group>"; };
 		8E013A9D1B9CA54D00F248D8 /* slua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = slua.c; path = ../../../Assets/slua_src/slua.c; sourceTree = "<group>"; };
 		8E013A9F1B9CA55B00F248D8 /* libslua.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libslua.a; path = ../src/libslua.a; sourceTree = "<group>"; };
+		8EAAAA9B1B9CA8380077D9BE /* libpbc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpbc.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EAAAA9C1B9CA8380077D9BE /* libpbc.a in Frameworks */,
 				8E013AA01B9CA55B00F248D8 /* libslua.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +53,7 @@
 		8E013A741B9CA51E00F248D8 = {
 			isa = PBXGroup;
 			children = (
+				8EAAAA9B1B9CA8380077D9BE /* libpbc.a */,
 				8E013A9F1B9CA55B00F248D8 /* libslua.a */,
 				8E013A9D1B9CA54D00F248D8 /* slua.c */,
 				8E013A9B1B9CA54200F248D8 /* pbc-lua.c */,
@@ -223,6 +227,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/luzexi/Desktop/work/github/slua/build/luajit-2.1.0/src",
+					"$(PROJECT_DIR)",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
@@ -243,6 +248,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/luzexi/Desktop/work/github/slua/build/luajit-2.1.0/src",
+					"$(PROJECT_DIR)",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
