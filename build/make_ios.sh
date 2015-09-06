@@ -38,6 +38,7 @@ make HOST_CC="gcc -std=c99" CROSS="$ISDKP" TARGET_FLAGS="$ISDKF" TARGET=arm64 TA
 cd src
 lipo libsluav7.a -create libsluav7s.a libslua64.a -output libslua.a
 cd ../slua
+xcodebuild clean
 xcodebuild
 cp -f ./build/Release-iphoneos/libslua.a ../../../Assets/Plugins/iOS/
 cd ..

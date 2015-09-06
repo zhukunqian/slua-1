@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8E74BE431B46647C00F9BF21"
+               BlueprintIdentifier = "8E013A7C1B9CA51E00F248D8"
                BuildableName = "libslua.a"
                BlueprintName = "slua"
                ReferencedContainer = "container:slua.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8E74BE4E1B46647C00F9BF21"
+               BlueprintIdentifier = "8E013A871B9CA51E00F248D8"
                BuildableName = "sluaTests.xctest"
                BlueprintName = "sluaTests"
                ReferencedContainer = "container:slua.xcodeproj">
@@ -42,21 +42,11 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8E74BE4E1B46647C00F9BF21"
-               BuildableName = "sluaTests.xctest"
-               BlueprintName = "sluaTests"
-               ReferencedContainer = "container:slua.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8E74BE431B46647C00F9BF21"
+            BlueprintIdentifier = "8E013A7C1B9CA51E00F248D8"
             BuildableName = "libslua.a"
             BlueprintName = "slua"
             ReferencedContainer = "container:slua.xcodeproj">
@@ -68,14 +58,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8E74BE431B46647C00F9BF21"
+            BlueprintIdentifier = "8E013A7C1B9CA51E00F248D8"
             BuildableName = "libslua.a"
             BlueprintName = "slua"
             ReferencedContainer = "container:slua.xcodeproj">
@@ -93,7 +83,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8E74BE431B46647C00F9BF21"
+            BlueprintIdentifier = "8E013A7C1B9CA51E00F248D8"
             BuildableName = "libslua.a"
             BlueprintName = "slua"
             ReferencedContainer = "container:slua.xcodeproj">

@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E7B78671B9C3C47005BA995 /* libslua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7B78661B9C3C47005BA995 /* libslua.a */; };
-		8E7B786A1B9C3C66005BA995 /* lpeg.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B78681B9C3C66005BA995 /* lpeg.c */; };
-		8E7B786C1B9C3C82005BA995 /* slua.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B786B1B9C3C82005BA995 /* slua.c */; };
-		8E7B786E1B9C3CA3005BA995 /* pbc-lua.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B786D1B9C3CA3005BA995 /* pbc-lua.c */; };
+		8E013A991B9CA52E00F248D8 /* lpeg.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E013A971B9CA52E00F248D8 /* lpeg.c */; };
+		8E013A9C1B9CA54200F248D8 /* pbc-lua.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E013A9B1B9CA54200F248D8 /* pbc-lua.c */; };
+		8E013A9E1B9CA54D00F248D8 /* slua.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E013A9D1B9CA54D00F248D8 /* slua.c */; };
+		8E013AA01B9CA55B00F248D8 /* libslua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E013A9F1B9CA55B00F248D8 /* libslua.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8E74BE421B46647C00F9BF21 /* CopyFiles */ = {
+		8E013A7B1B9CA51E00F248D8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
@@ -26,64 +26,58 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8E74BE441B46647C00F9BF21 /* libslua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libslua.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E7B78661B9C3C47005BA995 /* libslua.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libslua.a; path = ../src/libslua.a; sourceTree = "<group>"; };
-		8E7B78681B9C3C66005BA995 /* lpeg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lpeg.c; path = ../../../lpeg.c; sourceTree = "<group>"; };
-		8E7B78691B9C3C66005BA995 /* lpeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lpeg.h; path = ../../../lpeg.h; sourceTree = "<group>"; };
-		8E7B786B1B9C3C82005BA995 /* slua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = slua.c; path = ../../../../Assets/slua_src/slua.c; sourceTree = "<group>"; };
-		8E7B786D1B9C3CA3005BA995 /* pbc-lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "pbc-lua.c"; path = "../../../pbc/binding/lua/pbc-lua.c"; sourceTree = "<group>"; };
+		8E013A7D1B9CA51E00F248D8 /* libslua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libslua.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E013A971B9CA52E00F248D8 /* lpeg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lpeg.c; path = ../../lpeg.c; sourceTree = "<group>"; };
+		8E013A981B9CA52E00F248D8 /* lpeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lpeg.h; path = ../../lpeg.h; sourceTree = "<group>"; };
+		8E013A9A1B9CA53A00F248D8 /* pbc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pbc.h; path = "../../pbc-ios/pbc.h"; sourceTree = "<group>"; };
+		8E013A9B1B9CA54200F248D8 /* pbc-lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "pbc-lua.c"; path = "../../pbc-ios/binding/lua/pbc-lua.c"; sourceTree = "<group>"; };
+		8E013A9D1B9CA54D00F248D8 /* slua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = slua.c; path = ../../../Assets/slua_src/slua.c; sourceTree = "<group>"; };
+		8E013A9F1B9CA55B00F248D8 /* libslua.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libslua.a; path = ../src/libslua.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8E74BE411B46647C00F9BF21 /* Frameworks */ = {
+		8E013A7A1B9CA51E00F248D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E7B78671B9C3C47005BA995 /* libslua.a in Frameworks */,
+				8E013AA01B9CA55B00F248D8 /* libslua.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8E74BE3B1B46647C00F9BF21 = {
+		8E013A741B9CA51E00F248D8 = {
 			isa = PBXGroup;
 			children = (
-				8E7B78661B9C3C47005BA995 /* libslua.a */,
-				8E74BE461B46647C00F9BF21 /* slua */,
-				8E74BE451B46647C00F9BF21 /* Products */,
+				8E013A9F1B9CA55B00F248D8 /* libslua.a */,
+				8E013A9D1B9CA54D00F248D8 /* slua.c */,
+				8E013A9B1B9CA54200F248D8 /* pbc-lua.c */,
+				8E013A9A1B9CA53A00F248D8 /* pbc.h */,
+				8E013A971B9CA52E00F248D8 /* lpeg.c */,
+				8E013A981B9CA52E00F248D8 /* lpeg.h */,
+				8E013A7E1B9CA51E00F248D8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8E74BE451B46647C00F9BF21 /* Products */ = {
+		8E013A7E1B9CA51E00F248D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8E74BE441B46647C00F9BF21 /* libslua.a */,
+				8E013A7D1B9CA51E00F248D8 /* libslua.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8E74BE461B46647C00F9BF21 /* slua */ = {
-			isa = PBXGroup;
-			children = (
-				8E7B786D1B9C3CA3005BA995 /* pbc-lua.c */,
-				8E7B786B1B9C3C82005BA995 /* slua.c */,
-				8E7B78681B9C3C66005BA995 /* lpeg.c */,
-				8E7B78691B9C3C66005BA995 /* lpeg.h */,
-			);
-			path = slua;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8E74BE431B46647C00F9BF21 /* slua */ = {
+		8E013A7C1B9CA51E00F248D8 /* slua */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E74BE581B46647C00F9BF21 /* Build configuration list for PBXNativeTarget "slua" */;
+			buildConfigurationList = 8E013A911B9CA51E00F248D8 /* Build configuration list for PBXNativeTarget "slua" */;
 			buildPhases = (
-				8E74BE401B46647C00F9BF21 /* Sources */,
-				8E74BE411B46647C00F9BF21 /* Frameworks */,
-				8E74BE421B46647C00F9BF21 /* CopyFiles */,
+				8E013A791B9CA51E00F248D8 /* Sources */,
+				8E013A7A1B9CA51E00F248D8 /* Frameworks */,
+				8E013A7B1B9CA51E00F248D8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -91,55 +85,55 @@
 			);
 			name = slua;
 			productName = slua;
-			productReference = 8E74BE441B46647C00F9BF21 /* libslua.a */;
+			productReference = 8E013A7D1B9CA51E00F248D8 /* libslua.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8E74BE3C1B46647C00F9BF21 /* Project object */ = {
+		8E013A751B9CA51E00F248D8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = luzexi;
 				TargetAttributes = {
-					8E74BE431B46647C00F9BF21 = {
+					8E013A7C1B9CA51E00F248D8 = {
 						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
-			buildConfigurationList = 8E74BE3F1B46647C00F9BF21 /* Build configuration list for PBXProject "slua" */;
+			buildConfigurationList = 8E013A781B9CA51E00F248D8 /* Build configuration list for PBXProject "slua" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 8E74BE3B1B46647C00F9BF21;
-			productRefGroup = 8E74BE451B46647C00F9BF21 /* Products */;
+			mainGroup = 8E013A741B9CA51E00F248D8;
+			productRefGroup = 8E013A7E1B9CA51E00F248D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8E74BE431B46647C00F9BF21 /* slua */,
+				8E013A7C1B9CA51E00F248D8 /* slua */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8E74BE401B46647C00F9BF21 /* Sources */ = {
+		8E013A791B9CA51E00F248D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E7B786C1B9C3C82005BA995 /* slua.c in Sources */,
-				8E7B786A1B9C3C66005BA995 /* lpeg.c in Sources */,
-				8E7B786E1B9C3CA3005BA995 /* pbc-lua.c in Sources */,
+				8E013A9C1B9CA54200F248D8 /* pbc-lua.c in Sources */,
+				8E013A9E1B9CA54D00F248D8 /* slua.c in Sources */,
+				8E013A991B9CA52E00F248D8 /* lpeg.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		8E74BE561B46647C00F9BF21 /* Debug */ = {
+		8E013A8F1B9CA51E00F248D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -181,7 +175,7 @@
 			};
 			name = Debug;
 		};
-		8E74BE571B46647C00F9BF21 /* Release */ = {
+		8E013A901B9CA51E00F248D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -217,42 +211,40 @@
 			};
 			name = Release;
 		};
-		8E74BE591B46647C00F9BF21 /* Debug */ = {
+		8E013A921B9CA51E00F248D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(PROJECT_DIR)/../../pbc",
+					"$(PROJECT_DIR)/../../pbc-ios/",
 					"$(PROJECT_DIR)/../src",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/../build",
-					"$(PROJECT_DIR)/../../pbc",
 					"/Users/luzexi/Desktop/work/github/slua/build/luajit-2.1.0/src",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		8E74BE5A1B46647C00F9BF21 /* Release */ = {
+		8E013A931B9CA51E00F248D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(PROJECT_DIR)/../../pbc",
+					"$(PROJECT_DIR)/../../pbc-ios/",
 					"$(PROJECT_DIR)/../src",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/../build",
-					"$(PROJECT_DIR)/../../pbc",
 					"/Users/luzexi/Desktop/work/github/slua/build/luajit-2.1.0/src",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -262,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8E74BE3F1B46647C00F9BF21 /* Build configuration list for PBXProject "slua" */ = {
+		8E013A781B9CA51E00F248D8 /* Build configuration list for PBXProject "slua" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8E74BE561B46647C00F9BF21 /* Debug */,
-				8E74BE571B46647C00F9BF21 /* Release */,
+				8E013A8F1B9CA51E00F248D8 /* Debug */,
+				8E013A901B9CA51E00F248D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E74BE581B46647C00F9BF21 /* Build configuration list for PBXNativeTarget "slua" */ = {
+		8E013A911B9CA51E00F248D8 /* Build configuration list for PBXNativeTarget "slua" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8E74BE591B46647C00F9BF21 /* Debug */,
-				8E74BE5A1B46647C00F9BF21 /* Release */,
+				8E013A921B9CA51E00F248D8 /* Debug */,
+				8E013A931B9CA51E00F248D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8E74BE3C1B46647C00F9BF21 /* Project object */;
+	rootObject = 8E013A751B9CA51E00F248D8 /* Project object */;
 }

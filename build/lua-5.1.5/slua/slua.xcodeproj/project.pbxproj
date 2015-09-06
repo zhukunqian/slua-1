@@ -46,8 +46,8 @@
 /* Begin PBXFileReference section */
 		8E7B785E1B9C2E48005BA995 /* lpeg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lpeg.c; path = ../../lpeg.c; sourceTree = "<group>"; };
 		8E7B785F1B9C2E48005BA995 /* lpeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lpeg.h; path = ../../lpeg.h; sourceTree = "<group>"; };
-		8E7B78611B9C2EA3005BA995 /* pbc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pbc.h; path = ../../pbc/pbc.h; sourceTree = "<group>"; };
-		8E7B78621B9C2EBA005BA995 /* pbc-lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "pbc-lua.c"; path = "../../pbc/binding/lua/pbc-lua.c"; sourceTree = "<group>"; };
+		8E7B78611B9C2EA3005BA995 /* pbc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pbc.h; path = "../../pbc-osx/pbc.h"; sourceTree = "<group>"; };
+		8E7B78621B9C2EBA005BA995 /* pbc-lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "pbc-lua.c"; path = "../../pbc-osx/binding/lua/pbc-lua.c"; sourceTree = "<group>"; };
 		8EA5C9961B9CA03200DDA974 /* libpbc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpbc.a; sourceTree = "<group>"; };
 		E80919D41B745519008FED27 /* slua.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = slua.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80919D81B745519008FED27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
