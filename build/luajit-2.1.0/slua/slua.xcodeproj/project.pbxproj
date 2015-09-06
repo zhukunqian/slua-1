@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E7B78671B9C3C47005BA995 /* libslua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7B78661B9C3C47005BA995 /* libslua.a */; };
+		8E7B786A1B9C3C66005BA995 /* lpeg.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B78681B9C3C66005BA995 /* lpeg.c */; };
+		8E7B786C1B9C3C82005BA995 /* slua.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B786B1B9C3C82005BA995 /* slua.c */; };
+		8E7B786E1B9C3CA3005BA995 /* pbc-lua.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B786D1B9C3CA3005BA995 /* pbc-lua.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8E74BE421B46647C00F9BF21 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8E74BE441B46647C00F9BF21 /* libslua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libslua.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7B78661B9C3C47005BA995 /* libslua.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libslua.a; path = ../src/libslua.a; sourceTree = "<group>"; };
+		8E7B78681B9C3C66005BA995 /* lpeg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lpeg.c; path = ../../../lpeg.c; sourceTree = "<group>"; };
+		8E7B78691B9C3C66005BA995 /* lpeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lpeg.h; path = ../../../lpeg.h; sourceTree = "<group>"; };
+		8E7B786B1B9C3C82005BA995 /* slua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = slua.c; path = ../../../../Assets/slua_src/slua.c; sourceTree = "<group>"; };
+		8E7B786D1B9C3CA3005BA995 /* pbc-lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "pbc-lua.c"; path = "../../../pbc/binding/lua/pbc-lua.c"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E74BE411B46647C00F9BF21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E7B78671B9C3C47005BA995 /* libslua.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E74BE3B1B46647C00F9BF21 = {
+			isa = PBXGroup;
+			children = (
+				8E7B78661B9C3C47005BA995 /* libslua.a */,
+				8E74BE461B46647C00F9BF21 /* slua */,
+				8E74BE451B46647C00F9BF21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E74BE451B46647C00F9BF21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E74BE441B46647C00F9BF21 /* libslua.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E74BE461B46647C00F9BF21 /* slua */ = {
+			isa = PBXGroup;
+			children = (
+				8E7B786D1B9C3CA3005BA995 /* pbc-lua.c */,
+				8E7B786B1B9C3C82005BA995 /* slua.c */,
+				8E7B78681B9C3C66005BA995 /* lpeg.c */,
+				8E7B78691B9C3C66005BA995 /* lpeg.h */,
+			);
+			path = slua;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E74BE431B46647C00F9BF21 /* slua */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E74BE581B46647C00F9BF21 /* Build configuration list for PBXNativeTarget "slua" */;
+			buildPhases = (
+				8E74BE401B46647C00F9BF21 /* Sources */,
+				8E74BE411B46647C00F9BF21 /* Frameworks */,
+				8E74BE421B46647C00F9BF21 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = slua;
+			productName = slua;
+			productReference = 8E74BE441B46647C00F9BF21 /* libslua.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E74BE3C1B46647C00F9BF21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = luzexi;
+				TargetAttributes = {
+					8E74BE431B46647C00F9BF21 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 8E74BE3F1B46647C00F9BF21 /* Build configuration list for PBXProject "slua" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E74BE3B1B46647C00F9BF21;
+			productRefGroup = 8E74BE451B46647C00F9BF21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E74BE431B46647C00F9BF21 /* slua */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E74BE401B46647C00F9BF21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E7B786C1B9C3C82005BA995 /* slua.c in Sources */,
+				8E7B786A1B9C3C66005BA995 /* lpeg.c in Sources */,
+				8E7B786E1B9C3CA3005BA995 /* pbc-lua.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8E74BE561B46647C00F9BF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8E74BE571B46647C00F9BF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E74BE591B46647C00F9BF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/../../pbc",
+					"$(PROJECT_DIR)/../src",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../build",
+					"$(PROJECT_DIR)/../../pbc",
+					"/Users/luzexi/Desktop/work/github/slua/build/luajit-2.1.0/src",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8E74BE5A1B46647C00F9BF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/../../pbc",
+					"$(PROJECT_DIR)/../src",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../build",
+					"$(PROJECT_DIR)/../../pbc",
+					"/Users/luzexi/Desktop/work/github/slua/build/luajit-2.1.0/src",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E74BE3F1B46647C00F9BF21 /* Build configuration list for PBXProject "slua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E74BE561B46647C00F9BF21 /* Debug */,
+				8E74BE571B46647C00F9BF21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E74BE581B46647C00F9BF21 /* Build configuration list for PBXNativeTarget "slua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E74BE591B46647C00F9BF21 /* Debug */,
+				8E74BE5A1B46647C00F9BF21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E74BE3C1B46647C00F9BF21 /* Project object */;
+}
