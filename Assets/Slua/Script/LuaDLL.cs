@@ -89,6 +89,14 @@ namespace LuaInterface
 		const string LUADLL = "slua";
 #endif
 
+		//pdc
+		[DllImport(LUADLL, CallingConvention = CallingConvention.Cdecl)]
+		public static extern void luaopen_protobuf_c(IntPtr luaState);
+
+		//lpeg
+		[DllImport(LUADLL, CallingConvention = CallingConvention.Cdecl)]
+		public static extern void luaopen_lpeg(IntPtr luaState);
+
 		[DllImport(LUADLL, CallingConvention = CallingConvention.Cdecl)]
 		public static extern void luaS_openextlibs(IntPtr L);
 
