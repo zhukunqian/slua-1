@@ -507,6 +507,24 @@ namespace LuaInterface
 			return null;
 		}
 
+		public static byte[] lua_tobytes(IntPtr luaState, int index)
+		{
+			int strlen;
+
+			IntPtr str = luaS_tolstring32(luaState, index, out strlen); // fix il2cpp 64 bit
+
+			if (str != IntPtr.Zero)
+			{
+				byte[] res = new byte[strlen];
+				for( int i = 0 ; i<res.Length ; i++ )
+				{
+					res[i] = Marshal.ReadByte(str,i);
+				}
+				return res;
+			}
+			return null;
+		}
+
 		[DllImport(LUADLL, CallingConvention = CallingConvention.Cdecl)]
 		public static extern IntPtr lua_atpanic(IntPtr luaState, LuaCSFunction panicf);
 

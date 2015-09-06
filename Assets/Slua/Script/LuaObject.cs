@@ -315,6 +315,12 @@ return index
 			{
 				pushValue(L, (LuaCSFunction)o);
 			};
+
+			typePushMap[typeof(ProtoBuff)] = (IntPtr L, object o) =>
+			{
+				ProtoBuff pb = (ProtoBuff)o;
+				LuaDLL.lua_pushlstring(L, pb.data , pb.data.Length);
+			};
 		}
 
 		static int getOpFunction(IntPtr l, string f, string tip)
