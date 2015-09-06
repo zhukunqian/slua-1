@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E7B78601B9C2E48005BA995 /* lpeg.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B785E1B9C2E48005BA995 /* lpeg.c */; };
+		8E7B78631B9C2EBA005BA995 /* pbc-lua.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B78621B9C2EBA005BA995 /* pbc-lua.c */; };
+		8E7B78651B9C300E005BA995 /* libpbc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7B78641B9C300E005BA995 /* libpbc.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		E8091A131B74553E008FED27 /* lapi.c in Sources */ = {isa = PBXBuildFile; fileRef = E80919F51B74553E008FED27 /* lapi.c */; };
 		E8091A141B74553E008FED27 /* lauxlib.c in Sources */ = {isa = PBXBuildFile; fileRef = E80919F61B74553E008FED27 /* lauxlib.c */; };
 		E8091A151B74553E008FED27 /* lbaselib.c in Sources */ = {isa = PBXBuildFile; fileRef = E80919F71B74553E008FED27 /* lbaselib.c */; };
@@ -41,6 +44,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E7B785E1B9C2E48005BA995 /* lpeg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lpeg.c; path = ../../lpeg.c; sourceTree = "<group>"; };
+		8E7B785F1B9C2E48005BA995 /* lpeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lpeg.h; path = ../../lpeg.h; sourceTree = "<group>"; };
+		8E7B78611B9C2EA3005BA995 /* pbc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pbc.h; path = ../../pbc/pbc.h; sourceTree = "<group>"; };
+		8E7B78621B9C2EBA005BA995 /* pbc-lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "pbc-lua.c"; path = "../../pbc/binding/lua/pbc-lua.c"; sourceTree = "<group>"; };
+		8E7B78641B9C300E005BA995 /* libpbc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpbc.a; path = ../../pbc/build/libpbc.a; sourceTree = "<group>"; };
 		E80919D41B745519008FED27 /* slua.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = slua.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80919D81B745519008FED27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E80919DE1B74553E008FED27 /* lapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lapi.h; path = ../src/lapi.h; sourceTree = "<group>"; };
@@ -104,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E7B78651B9C300E005BA995 /* libpbc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +122,11 @@
 		E80919CB1B745519008FED27 = {
 			isa = PBXGroup;
 			children = (
+				8E7B78641B9C300E005BA995 /* libpbc.a */,
+				8E7B78621B9C2EBA005BA995 /* pbc-lua.c */,
+				8E7B78611B9C2EA3005BA995 /* pbc.h */,
+				8E7B785E1B9C2E48005BA995 /* lpeg.c */,
+				8E7B785F1B9C2E48005BA995 /* lpeg.h */,
 				E8091A311B745553008FED27 /* slua.c */,
 				E80919DE1B74553E008FED27 /* lapi.h */,
 				E80919DF1B74553E008FED27 /* lauxlib.h */,
@@ -293,6 +307,8 @@
 				E8091A171B74553E008FED27 /* ldblib.c in Sources */,
 				E8091A321B745553008FED27 /* slua.c in Sources */,
 				E8091A261B74553E008FED27 /* lparser.c in Sources */,
+				8E7B78601B9C2E48005BA995 /* lpeg.c in Sources */,
+				8E7B78631B9C2EBA005BA995 /* pbc-lua.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,8 +397,17 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/../../pbc/",
+				);
 				INFOPLIST_FILE = slua/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/luzexi/Desktop/work/github/slua/build/pbc/build,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
@@ -394,8 +419,17 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/../../pbc/",
+				);
 				INFOPLIST_FILE = slua/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/luzexi/Desktop/work/github/slua/build/pbc/build,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
@@ -421,6 +455,7 @@
 				E80919DD1B745519008FED27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
