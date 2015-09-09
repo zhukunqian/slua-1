@@ -1,9 +1,9 @@
-#slua
+#slua 3rd library.
 Fastest Unity lua binding via static code generating.
 
 Introduction slua [Document](slua_README.md)
 
-##3rd
+##What's different
 This fork integrate with 3rd Lua library.
 
 It has pbc and lpeg Lua library and has been test.
@@ -17,14 +17,14 @@ A submodule in this repo , if you want to build dll in windows you must init and
 
 2.lpeg (http://www.inf.puc-rio.br/~roberto/lpeg/lpeg.html) is a new pattern-matching library for Lua, based on Parsing Expression Grammars (PEGs).
 
-##How to use slua
+##How to use slua in unity3d.
 See inner demo for help or [Document](doc.md) (in chinese).
 
-##How to use 3rd
+##How to use 3rd library in unity3d.
 See inner demo for help or [Document](doc_3rd.md).
 
 
-###Build library
+###How to build library by yourself.
 It has sevral shell or bat in the build folder.
 
 The shell or bat will build the library for specially platform.
