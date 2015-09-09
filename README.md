@@ -12,7 +12,7 @@ It will add other useful 3rd Lua library in the future.
 
 A submodule in this repo , if you want to build dll in windows you must init and update the submodule like : git submoudle --init update.
 
-##about 3rd library
+##About 3rd library
 1.pbc (https://github.com/cloudwu/pbc) is a google protocol buffers library for C without code generation.
 
 2.lpeg (http://www.inf.puc-rio.br/~roberto/lpeg/lpeg.html) is a new pattern-matching library for Lua, based on Parsing Expression Grammars (PEGs).
