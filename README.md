@@ -19,5 +19,5 @@ It will add other useful 3rd Lua library in the future.
 See inner demo for help or [Document](doc.md) (in chinese).
 
 ##How to use 3rd
-See inner demo for help or [Document](doc_3rd.md) (in chinese).
+See inner demo for help or [Document](doc_3rd.md).
 
