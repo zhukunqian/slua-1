@@ -38,3 +38,8 @@ The shell or bat will build the library for specially platform.
 4.make-windows-32.cmd will build windows 32bit dll. You must excute it in windows.
 
 5.make-windows-64.cmd will build windows 64bit dll. You must exute it in windows.
+
+
+###TODO
+1.Add luasocket library in slua.
+2.Add lua-cjson library in slua.
