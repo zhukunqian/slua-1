@@ -90,61 +90,61 @@ import "UnityEngine"
 function main()
 
 	-- create gameobject
-		local cube = GameObject.CreatePrimitive(UnityEngine.PrimitiveType.Cube)
+	local cube = GameObject.CreatePrimitive(UnityEngine.PrimitiveType.Cube)
 
-			-- find gameobject
-				local go = GameObject.Find("Canvas/Button")
-					
-						-- get component by type name
-							local btn = go:GetComponent("Button")
-								
-									-- get out parameter
-										local ok,hitinfo = Physics.Raycast(Vector3(0,0,0),Vector3(0,0,1),Slua.out)
-											print("Physics Hitinfo",ok,hitinfo)
-												
-													-- foreach enumeratable object
-														for t in Slua.iter(Canvas.transform) do
-																	print("foreach transorm",t)
-																		end
-																			
-																				-- add event listener
-																					btn.onClick:AddListener(function()
-																							local go = GameObject.Find("Canvas/Text")
-																									local label = go:GetComponent("Text")
-																											label.text="hello world"
-																												end)
-																						
-																							-- use vector3
-																								local pos = Vector3(10,10,10)+Vector3(1,1,1)
-																									cube.transform.position = pos
-																										
-																											-- use coroutine
-																												local c=coroutine.create(function()
-																														print "coroutine start"
+	-- find gameobject
+	local go = GameObject.Find("Canvas/Button")
+	
+	-- get component by type name
+	local btn = go:GetComponent("Button")
+	
+	-- get out parameter
+	local ok,hitinfo = Physics.Raycast(Vector3(0,0,0),Vector3(0,0,1),Slua.out)
+	print("Physics Hitinfo",ok,hitinfo)
+	
+	-- foreach enumeratable object
+	for t in Slua.iter(Canvas.transform) do
+		print("foreach transorm",t)
+	end
+	
+	-- add event listener
+	btn.onClick:AddListener(function()
+		local go = GameObject.Find("Canvas/Text")
+		local label = go:GetComponent("Text")
+		label.text="hello world"
+	end)
+	
+	-- use vector3
+	local pos = Vector3(10,10,10)+Vector3(1,1,1)
+	cube.transform.position = pos
+	
+	-- use coroutine
+	local c=coroutine.create(function()
+		print "coroutine start"
 
-																																Yield(WaitForSeconds(2))
-																																		print "coroutine WaitForSeconds 2"
+		Yield(WaitForSeconds(2))
+		print "coroutine WaitForSeconds 2"
 
-																																				local www = WWW("http://www.sineysoft.com")
-																																						Yield(www)
-																																								print(#Slua.ToString(www.bytes))
-																																									end)
-																													coroutine.resume(c)
+		local www = WWW("http://www.sineysoft.com")
+		Yield(www)
+		print(#Slua.ToString(www.bytes))
+	end)
+	coroutine.resume(c)
 
-																														-- add delegate
-																															Deleg.daction = {"+=",self.actionD} --it's ok for iOS
-																																
-																																	-- remove delegate
-																																		Deleg.daction = {"-=",self.actionD} --it's ok for iOS
-																																			
-																																				-- set delegate
-																																					Deleg.daction = function() print("callback") end --it's ok for iOS
-																																						
-																																							-- remove all
-																																								Deleg.daction = nil
-																																								end
+	-- add delegate
+	Deleg.daction = {"+=",self.actionD} --it's ok for iOS
+	
+	-- remove delegate
+	Deleg.daction = {"-=",self.actionD} --it's ok for iOS
+	
+	-- set delegate
+	Deleg.daction = function() print("callback") end --it's ok for iOS
+	
+	-- remove all
+	Deleg.daction = nil
+end
 
-																																								~~~~~~~~~~
+~~~~~~~~~~
 
 ##Export custom class
 
@@ -170,5 +170,4 @@ see http://www.sineysoft.com/post/164 for detail (in chinese), compared with ulu
 
 
 unit is secend, run 200k times / test, more smarller more better.
-
 
