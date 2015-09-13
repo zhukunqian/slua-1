@@ -57,6 +57,7 @@ namespace SLua
             LuaDLL.luaS_openextlibs(L);
 			LuaDLL.luaopen_protobuf_c(L);
 			LuaDLL.luaopen_lpeg(L);
+			LuaDLL.luaopen_cjson(L);
             return 0;
         }
 

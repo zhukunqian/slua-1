@@ -14,8 +14,8 @@ public class ProtoTest : MonoBehaviour
 
 	void Start()
 	{
-		l = new LuaSvr();
-		l.start("protoTest");
+		l = new LuaSvr("protoTest");
+		// l.start("protoTest");
 	}
 
 	void Update()
