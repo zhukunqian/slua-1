@@ -17,6 +17,8 @@ MinGW is submodule in this repo , if you want to build dll in windows you must i
 
 2.lpeg (http://www.inf.puc-rio.br/~roberto/lpeg/lpeg.html) is a new pattern-matching library for Lua, based on Parsing Expression Grammars (PEGs).
 
+3.lua-cjson (http://www.kyne.com.au/~mark/software/lua-cjson.php) provides JSON support for Lua.
+
 ##How to use slua in unity3d.
 See inner demo for help or [Document](doc.md) (in chinese).
 
