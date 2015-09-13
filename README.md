@@ -3,16 +3,18 @@ Fastest Unity lua binding via static code generating.
 
 Introduction slua [Document](slua_README.md)
 
-##What's different
+###What's different
 This fork integrate with 3rd Lua library.
 
 It has pbc and lpeg Lua library and has been test.
 
 It will add other useful 3rd Lua library in the future.
 
-MinGW is submodule in this repo , if you want to build dll in windows you must init and update the submodule like : git submoudle update --init.
+###MinGW for windows build
+MinGW , a contraction of "Minimalist GNU for Windows", is a minimalist development environment for native Microsoft Windows applications.
+MinGW be a submodule in this repo and about 300 MB , If you have to build dll in windows you must init and update the submodule like : git submoudle update --init.
 
-##About 3rd library
+###About 3rd library
 1.pbc (https://github.com/cloudwu/pbc) is a google protocol buffers library for C without code generation.
 
 2.lpeg (http://www.inf.puc-rio.br/~roberto/lpeg/lpeg.html) is a new pattern-matching library for Lua, based on Parsing Expression Grammars (PEGs).
