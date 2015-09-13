@@ -12,6 +12,7 @@ It will add other useful 3rd Lua library in the future.
 
 ###MinGW for windows build
 MinGW , a contraction of "Minimalist GNU for Windows", is a minimalist development environment for native Microsoft Windows applications.
+
 MinGW be a submodule in this repo and about 300 MB , If you have to build dll in windows you must init and update the submodule like : git submoudle update --init.
 
 ###About 3rd library
