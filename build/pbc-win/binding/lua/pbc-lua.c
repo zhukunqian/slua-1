@@ -19,8 +19,8 @@ extern "C" {
 #endif
 
 
-#ifndef _MSC_VER
-#include <malloc.h>
+#ifndef WINVER
+#include <alloca.h>
 #else
 #define alloca _alloca
 #endif
