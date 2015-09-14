@@ -20,7 +20,7 @@ extern "C" {
 
 
 #ifndef _MSC_VER
-#include <malloc.h>
+#include <alloca.h>
 #else
 #define alloca _alloca
 #endif
