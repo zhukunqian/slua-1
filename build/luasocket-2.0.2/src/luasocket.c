@@ -99,6 +99,7 @@ static int base_open(lua_State *L) {
         lua_pushstring(L, "_VERSION");
         lua_pushstring(L, LUASOCKET_VERSION);
         lua_rawset(L, -3);
+        
         return 1;
     } else {
         lua_pushstring(L, "unable to initialize library");
