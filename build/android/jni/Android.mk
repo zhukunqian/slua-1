@@ -9,9 +9,9 @@ include $(CLEAR_VARS)
 LOCAL_FORCE_STATIC_EXECUTABLE := true
 LOCAL_MODULE := slua
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/luajit/src 
-LOCAL_C_INCLUDES += $(LOCAL_PATH)../../pbc-master
-LOCAL_C_INCLUDES += $(LOCAL_PATH)../../lua-cjson-2.1.0
-LOCAL_C_INCLUDES += $(LOCAL_PATH)../../luasocket-2.0.2
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../pbc-master
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../lua-cjson-2.1.0
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../luasocket-2.0.2
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/sqlite/src
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../
 
