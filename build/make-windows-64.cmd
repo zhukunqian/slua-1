@@ -33,11 +33,26 @@ gcc ..\Assets\slua_src\slua.c ^
 	pbc-win\src\varint.c ^
 	pbc-win\src\wmessage.c ^
 	pbc-win\binding\lua\pbc-lua.c ^
+	luasocket-2.0.2/src/auxiliar.c ^
+	luasocket-2.0.2/src/buffer.c ^
+	luasocket-2.0.2/src/except.c ^
+	luasocket-2.0.2/src/inet.c ^
+	luasocket-2.0.2/src/io.c ^
+	luasocket-2.0.2/src/luasocket.c ^
+	luasocket-2.0.2/src/mime.c ^
+	luasocket-2.0.2/src/options.c ^
+	luasocket-2.0.2/src/select.c ^
+	luasocket-2.0.2/src/tcp.c ^
+	luasocket-2.0.2/src/timeout.c ^
+	luasocket-2.0.2/src/udp.c ^
+	luasocket-2.0.2/src/unix.c ^
+	luasocket-2.0.2/src/usocket.c ^
 	-o window/x86_64/slua.dll -m64 -shared ^
 	-I.\ ^
 	-Ilua-cjson-2.1.0 ^
 	-Iluajit-2.0.4\src ^
 	-Ipbc-win ^
+	-Iluasocket-2.0.2 ^
 	-Wl,--whole-archive window\x86_64\libluajit.a ^
 	-Wl,--no-whole-archive -lwsock32 -static-libgcc -static-libstdc++
 
