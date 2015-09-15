@@ -48,10 +48,10 @@ static int base_open(lua_State *L);
 * Modules and functions
 \*-------------------------------------------------------------------------*/
 static const luaL_reg mod[] = {
-    {"auxiliar", auxiliar_open},
+//    {"auxiliar", auxiliar_open},
     {"except", except_open},
     {"timeout", timeout_open},
-    {"buffer", buffer_open},
+//    {"buffer", buffer_open},
     {"inet", inet_open},
     {"tcp", tcp_open},
     {"udp", udp_open},

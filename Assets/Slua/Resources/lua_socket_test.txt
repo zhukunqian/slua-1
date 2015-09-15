@@ -1,0 +1,8 @@
+
+
+local test1 = require "luasocket_test/testclnt"
+
+
+function main()
+
+end

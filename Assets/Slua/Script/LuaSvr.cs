@@ -58,6 +58,7 @@ namespace SLua
 			LuaDLL.luaopen_protobuf_c(L);
 			LuaDLL.luaopen_lpeg(L);
 			LuaDLL.luaopen_cjson(L);
+			LuaDLL.luaopen_socket_core(L);
             return 0;
         }
 
