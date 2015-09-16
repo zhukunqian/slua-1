@@ -8,12 +8,6 @@ mingw32-make BUILDMODE=static CC="gcc -m32"
 copy src\libluajit.a ..\window\x86\libluajit.a /y
 cd ..
 
-:cd pbc-win
-:mingw32-make clean
-:mingw32-make BUILDMODE=static CC="gcc -m32" lib
-:copy build\libpbc.a ..\window\x86\libpbc.a /y
-:cd ..
-
 gcc ..\Assets\slua_src\slua.c ^
 	lpeg.c ^
 	lua-cjson-2.1.0\strbuf.c ^
@@ -45,7 +39,6 @@ gcc ..\Assets\slua_src\slua.c ^
 	luasocket-2.0.2/src/tcp.c ^
 	luasocket-2.0.2/src/timeout.c ^
 	luasocket-2.0.2/src/udp.c ^
-	luasocket-2.0.2/src/unix.c ^
 	luasocket-2.0.2/src/wsocket.c ^
 	-o window/x86/slua.dll -m32 -shared ^
 	-I.\ ^
