@@ -46,7 +46,7 @@ gcc ..\Assets\slua_src\slua.c ^
 	luasocket-2.0.2/src/timeout.c ^
 	luasocket-2.0.2/src/udp.c ^
 	luasocket-2.0.2/src/unix.c ^
-	luasocket-2.0.2/src/usocket.c ^
+	luasocket-2.0.2/src/wsocket.c ^
 	-o window/x86_64/slua.dll -m64 -shared ^
 	-I.\ ^
 	-Ilua-cjson-2.1.0 ^
