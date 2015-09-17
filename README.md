@@ -6,7 +6,9 @@ Introduction slua [Document](slua_README.md)
 ###What's different
 This fork integrate with 3rd Lua library.
 
-It has pbc and lpeg Lua library and has been test.
+It has pbc , lpeg , cjson , lua-socket Lua library and so on.
+
+The library is already been test in Mac , Iphone , Android , Windows.
 
 It will add other useful 3rd Lua library in the future.
 
@@ -21,6 +23,8 @@ MinGW be a submodule in this repo and about 300 MB , If you have to build dll in
 2.lpeg (http://www.inf.puc-rio.br/~roberto/lpeg/lpeg.html) is a new pattern-matching library for Lua, based on Parsing Expression Grammars (PEGs).
 
 3.lua-cjson (http://www.kyne.com.au/~mark/software/lua-cjson.php) provides JSON support for Lua.
+
+4.lua-socket (http://w3.impa.br/~diego/software/luasocket/home.html) is a Lua extension library that is composed by two parts: a C core that provides support for the TCP and UDP transport layers, and a set of Lua modules that add support for functionality commonly needed by applications that deal with the Internet.
 
 ##How to use slua in unity3d.
 See inner demo for help or [Document](doc.md) (in chinese).
@@ -48,6 +52,6 @@ The shell or bat will build the library for specially platform.
 ###TODO
 1.Add lua-cjson library in slua. ( Finished )
 
-2.Add luasocket library in slua.
+2.Add lua-socket library in slua. ( Finished )
 
 3.Add ffi + curl library in slua.
