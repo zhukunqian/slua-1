@@ -19,11 +19,11 @@ extern "C" {
 #endif
 
 
-#ifndef WINVER
-#include <alloca.h>
-#else
-#define alloca _alloca
-#endif
+//#ifndef WINVER
+//#include <alloca.h>
+//#else
+//#define alloca _alloca
+//#endif
 
 #include <string.h>
 #include <stdlib.h>

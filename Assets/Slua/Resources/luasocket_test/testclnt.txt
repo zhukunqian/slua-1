@@ -1,27 +1,27 @@
 local socket = require "socket"
 local socketc = require "socketc"
 
-host = host or "192.168.1.108"
+host = host or "192.168.0.184"
 port = port or "8383"
 
 function pass(...)
-    local s = string.format(unpack(arg))
+    local s = string.format(unpack({...}))
     print(s, "\n")
 end
 
 function fail(...)
-    local s = string.format(unpack(arg))
+    local s = string.format(unpack({...}))
     print("ERROR: ", s, "!\n")
     socket.sleep(3)
 end
 
 function warn(...)
-    local s = string.format(unpack(arg))
+    local s = string.format(unpack({...}))
     print("WARNING: ", s, "\n")
 end
 
 function remote(...)
-    local s = string.format(unpack(arg))
+    local s = string.format(unpack({...}))
     s = string.gsub(s, "\n", ";")
     s = string.gsub(s, "%s+", " ")
     s = string.gsub(s, "^%s*", "")
@@ -97,7 +97,7 @@ function reconnect()
     data:setoption("tcp-nodelay", true)
 end
 
-pass("attempting control connection...")
+pass("attempting control connection ok")
 if socketc.connect == nil then
     print("socket connect is nil")
 end
@@ -425,7 +425,7 @@ function connect_errors()
     assert(not c and e)
     print("ok: ", e)
     print("host not found: ")
-    local c, e = socketc.connect("host.is.invalid", 1);
+    local c, e = socketc.connect("host.is.invaliddf", 1);
     assert(not c and e, e)
     print("ok: ", e)
 end

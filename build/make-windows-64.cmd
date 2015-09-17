@@ -48,6 +48,6 @@ gcc ..\Assets\slua_src\slua.c ^
 	-Iluasocket-2.0.2 ^
 	-Wl,--whole-archive window\x86_64\libluajit.a ^
 	-Wl,--no-whole-archive -lwsock32 -static-libgcc -static-libstdc++
-
+	
 copy window\x86_64\slua.dll ..\Assets\Plugins\x64\slua.dll /y
 pause
