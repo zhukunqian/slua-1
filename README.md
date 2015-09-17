@@ -10,7 +10,10 @@ We already have pbc , lpeg , cjson , lua-socket librarys and more and more in th
 
 The library is already been test in Mac , Iphone , Android , Windows.
 
-It will add other useful 3rd Lua library in the future.
+Website: http://www.luzexi.com
+
+Email: jesse_luzexi@163.com
+
 
 ###MinGW for windows build
 MinGW , a contraction of "Minimalist GNU for Windows", is a minimalist development environment for native Microsoft Windows applications.
