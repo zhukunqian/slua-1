@@ -6,7 +6,7 @@ Introduction slua [Document](slua_README.md)
 ###What's different
 This fork integrate with 3rd Lua library.
 
-It has pbc , lpeg , cjson , lua-socket Lua library and so on.
+We already have pbc , lpeg , cjson , lua-socket librarys and more and more in the future.
 
 The library is already been test in Mac , Iphone , Android , Windows.
 
@@ -34,9 +34,9 @@ See inner demo for help or [Document](doc_3rd.md).
 
 
 ###How to build library by yourself.
-It has sevral shell or bat in the build folder.
+It has sevral shell or bat in the build folder. If you have to choose some of theirs , you can modify the build scripts by yourself. It's simple I think if you really want.
 
-The shell or bat will build the library for specially platform.
+The shell or bat will build the library for specially platform:
 
 1.make_ios.sh will build iphone library in osx.
 
