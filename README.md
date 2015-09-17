@@ -36,7 +36,7 @@ See inner demo for help or [Document](doc_3rd.md).
 ###How to build library by yourself.
 It has sevral shell or bat in the build folder. If you have to choose some of theirs , you can modify the build scripts by yourself. It's simple I think if you really want.
 
-The shell or bat will build the library for specially platform:
+The shell or bat in the build folder can build the library for specially platform:
 
 1.make_ios.sh will build iphone library in osx.
 
