@@ -3,7 +3,7 @@
 ###pbc
 The path of pbc demo is Assets/Slua/example/pbc-example/protoTest.unity.
 
-To integrate pbc I add ProtoBuff class in slua. It works when you use proto buff between c# and Lua.
+To integrate pbc I add ByteArray class in slua. It works when you use byte[] between c# and Lua.
 
 ###lua-cjson
 The path of lua-cjson demo is Assets/Slua/example/cjson-example/cjson_test.unity.

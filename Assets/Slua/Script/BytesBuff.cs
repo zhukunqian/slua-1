@@ -2,17 +2,17 @@
 
 namespace SLua
 {
-	//Protocal Buff
-	public class ProtoBuff
+	//BytesArray
+	public class ByteArray
 	{
 		public byte[] data = null;
 
-		public ProtoBuff()
+		public ByteArray()
 		{
 			//
 		}
 
-		public ProtoBuff(byte[] d)
+		public ByteArray(byte[] d)
 		{
 			this.data = d;
 		}

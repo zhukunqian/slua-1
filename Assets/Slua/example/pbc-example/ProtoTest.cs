@@ -23,14 +23,14 @@ public class ProtoTest : MonoBehaviour
 
 	}
 
-	public static ProtoBuff GetProtoBytes()
+	public static ByteArray GetProtoBytes()
 	{
 		TextAsset at = Resources.Load("protoTest/addressbookBytes") as TextAsset;
-		ProtoBuff pb = new ProtoBuff(at.bytes);
+		ByteArray pb = new ByteArray(at.bytes);
 		return pb;
 	}
 
-	public static void SetProtoBytes( ProtoBuff pb )
+	public static void SetProtoBytes( ByteArray pb )
 	{
 		Debug.Log( "proto bytes " + System.Text.Encoding.ASCII.GetString(pb.data) );
 	}

@@ -83,11 +83,11 @@ namespace SLua
 			return true;
 		}
 
-		static public bool checkType(IntPtr l, int p, out ProtoBuff pb)
+		static public bool checkType(IntPtr l, int p, out ByteArray pb)
 		{
 			if (LuaDLL.lua_isstring(l, p))
 			{
-				pb = new ProtoBuff();
+				pb = new ByteArray();
 				pb.data = LuaDLL.lua_tobytes(l, p);
 				return true;
 			}
@@ -211,7 +211,7 @@ namespace SLua
 			LuaDLL.luaS_pushColor(l, o.r, o.g, o.b, o.a);
 		}
 
-		public static void pushValue(IntPtr l, ProtoBuff pb)
+		public static void pushValue(IntPtr l, ByteArray pb)
 		{
 			LuaDLL.lua_pushlstring(l, pb.data , pb.data.Length);
 		}
