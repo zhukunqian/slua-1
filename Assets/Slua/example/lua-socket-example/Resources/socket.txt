@@ -10,9 +10,9 @@
 local base = _G
 local string = require("string")
 local math = require("math")
-local socket = require "socket"
+local socket = require "socket.core"
 local print = print
-module("socketc")
+module("socket")
 
 -----------------------------------------------------------------------------
 -- Exported auxiliar functions

@@ -1,7 +1,7 @@
 local socket = require "socket"
-local socketc = require "socketc"
+--local socketc = require "socketc"
 
-host = host or "192.168.0.184"
+host = host or "192.168.1.108"
 port = port or "8383"
 
 function pass(...)
@@ -91,17 +91,17 @@ function reconnect()
         data = server:accept()
         data:setoption("tcp-nodelay", true)
     ]]
-    data, err = socketc.connect(host, port)
+    data, err = socket.connect(host, port)
     if not data then fail(err) 
     else pass("connected!") end
     data:setoption("tcp-nodelay", true)
 end
 
 pass("attempting control connection ok")
-if socketc.connect == nil then
+if socket.connect == nil then
     print("socket connect is nil")
 end
-control, err = socketc.connect(host, port)
+control, err = socket.connect(host, port)
 if err then fail(err)
 else pass("connected!") end
 control:setoption("tcp-nodelay", true)
@@ -286,10 +286,10 @@ function empty_connect()
         if data then data:close() data = nil end
         data = server:accept()
     ]]
-    data, err = socketc.connect("", port)
+    data, err = socket.connect("", port)
     if not data then 
         pass("ok")
-        data = socketc.connect(host, port)
+        data = socket.connect(host, port)
     else 
 		pass("gethostbyname returns localhost on empty string...")
     end
@@ -368,7 +368,7 @@ end
 ------------------------------------------------------------------------
 function accept_timeout()
     print("accept with timeout (if it hangs, it failed): ")
-    local s, e = socketc.bind("*", 0, 0)
+    local s, e = socket.bind("*", 0, 0)
     assert(s, e)
     local t = socket.gettime()
     s:settimeout(1)
@@ -400,7 +400,7 @@ end
 ------------------------------------------------------------------------
 function accept_errors()
     print("not listening: ")
-    local d, e = socketc.bind("*", 0)
+    local d, e = socket.bind("*", 0)
     assert(d, e);
     local c, e = socket.tcp();
     assert(c, e);
@@ -421,18 +421,18 @@ end
 ------------------------------------------------------------------------
 function connect_errors()
     print("connection refused: ")
-    local c, e = socketc.connect("localhost", 1);
+    local c, e = socket.connect("localhost", 1);
     assert(not c and e)
     print("ok: ", e)
     print("host not found: ")
-    local c, e = socketc.connect("host.is.invaliddf", 1);
+    local c, e = socket.connect("host.is.invaliddf", 1);
     assert(not c and e, e)
     print("ok: ", e)
 end
 
 ------------------------------------------------------------------------
 function rebind_test()
-    local c = socketc.bind("localhost", 0)
+    local c = socket.bind("localhost", 0)
     local i, p = c:getsockname()
     local s, e = socket.tcp()
     assert(s, e)
