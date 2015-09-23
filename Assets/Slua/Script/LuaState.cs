@@ -889,7 +889,7 @@ end
 		{
 			try
 			{
-				Debug.Log(fn);
+				// Debug.Log(fn);
 				byte[] bytes;
 				if (loaderDelegate != null)
 					bytes = loaderDelegate(fn);
