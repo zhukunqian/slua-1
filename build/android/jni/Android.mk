@@ -12,6 +12,7 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/luajit/src
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../pbc-master
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../lua-cjson-2.1.0
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../luasocket-2.0.2
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../sproto-master
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/sqlite/src
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../
 
@@ -49,6 +50,8 @@ LOCAL_SRC_FILES := ../../slua.c \
 				   ../../luasocket-2.0.2/src/udp.c \
 				   ../../luasocket-2.0.2/src/unix.c \
 				   ../../luasocket-2.0.2/src/usocket.c \
+				   ../../sproto-master/lsproto.c \
+				   ../../sproto-master/sproto.c \
 				   ./sqlite/src/sqlite3.c \
 				   ./sqlite/lsqlite3.c 
 
