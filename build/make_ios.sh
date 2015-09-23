@@ -1,25 +1,26 @@
 #!/usr/bin/env bash
 cd "$( dirname "${BASH_SOURCE[0]}" )"
-cp slua.c luajit-2.1.0/src/
+#cp slua.c luajit-2.1.0/src/
 cd luajit-2.1.0
 LIPO="xcrun -sdk iphoneos lipo"
 STRIP="xcrun -sdk iphoneos strip"
 
 IXCODE=`xcode-select -print-path`
 ISDK=$IXCODE/Platforms/iPhoneOS.platform/Developer
-ISDKVER=iPhoneOS8.4.sdk
+ISDKVER=iPhoneOS9.0.sdk
 ISDKP=$IXCODE/usr/bin/
+ISDKD=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/
 
 if [ ! -e $ISDKP/ar ]; then 
-  sudo cp $ISDK/usr/bin/ar $ISDKP
+  sudo cp $ISDKD/usr/bin/ar $ISDKP
 fi
 
 if [ ! -e $ISDKP/ranlib ]; then
-  sudo cp $ISDK/usr/bin/ranlib $ISDKP
+  sudo cp $ISDKD/usr/bin/ranlib $ISDKP
 fi
 
 if [ ! -e $ISDKP/strip ]; then
-  sudo cp $ISDK/usr/bin/strip $ISDKP
+  sudo cp $ISDKD/usr/bin/strip $ISDKP
 fi
 
 make clean
