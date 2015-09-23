@@ -13,7 +13,8 @@ public class lua_socket_test : MonoBehaviour
 
 	void Start()
 	{
-		l = new LuaSvr("lua_socket_test");
+		l = new LuaSvr();
+		l.init(null,()=>{l.start("lua_socket_test");});
 	}
 
 	void Update()

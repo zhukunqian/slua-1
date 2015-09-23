@@ -2,7 +2,7 @@
 
 namespace SLua
 {
-	//BytesArray
+	//ByteArray
 	public class ByteArray
 	{
 		public byte[] data = null;

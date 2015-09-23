@@ -92,19 +92,28 @@ namespace LuaInterface
 
 		//pdc
 		[DllImport(LUADLL, CallingConvention = CallingConvention.Cdecl)]
-		public static extern void luaopen_protobuf_c(IntPtr luaState);
+		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+		public static extern int luaopen_protobuf_c(IntPtr luaState);
 
 		//lpeg
 		[DllImport(LUADLL, CallingConvention = CallingConvention.Cdecl)]
-		public static extern void luaopen_lpeg(IntPtr luaState);
+		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+		public static extern int luaopen_lpeg(IntPtr luaState);
 
 		//cjson
 		[DllImport(LUADLL, CallingConvention = CallingConvention.Cdecl)]
-		public static extern void luaopen_cjson(IntPtr luaState);
+		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+		public static extern int luaopen_cjson(IntPtr luaState);
 
 		//lua socket
 		[DllImport(LUADLL, CallingConvention = CallingConvention.Cdecl)]
-		public static extern void luaopen_socket_core(IntPtr luaState);
+		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+		public static extern int luaopen_socket_core(IntPtr luaState);
+
+		//lua socket mime
+		[DllImport(LUADLL, CallingConvention = CallingConvention.Cdecl)]
+		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+		public static extern int luaopen_mime_core(IntPtr luaState);
 
 		[DllImport(LUADLL, CallingConvention = CallingConvention.Cdecl)]
 		public static extern void luaS_openextlibs(IntPtr L);
