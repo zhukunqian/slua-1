@@ -1,6 +1,5 @@
-obj/local/armeabi-v7a/objs/slua/__/__/__/Assets/slua_src/slua.o: \
- jni/../../../Assets/slua_src/slua.c jni/luajit/src/lua.h \
- jni/luajit/src/luaconf.h \
+obj/local/armeabi-v7a/objs/slua/__/__/slua.o: jni/../../slua.c \
+ jni/luajit/src/lua.h jni/luajit/src/luaconf.h \
  /Users/luzexi/Desktop/work/_Environment/android-ndk-r9/platforms/android-3/arch-arm/usr/include/limits.h \
  /Users/luzexi/Desktop/work/_Environment/android-ndk-r9/platforms/android-3/arch-arm/usr/include/sys/cdefs.h \
  /Users/luzexi/Desktop/work/_Environment/android-ndk-r9/platforms/android-3/arch-arm/usr/include/sys/cdefs_elf.h \
