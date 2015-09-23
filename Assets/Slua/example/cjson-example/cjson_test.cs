@@ -14,7 +14,7 @@ public class cjson_test : MonoBehaviour
 	void Start()
 	{
 		l = new LuaSvr();
-		l.init(null,()=>{l.start("cjson_test");});
+		l.init(null,()=>{l.start("cjsonTest");});
 	}
 
 	void Update()
