@@ -39,6 +39,7 @@
 		8ED6AFD71BA7011F003585A7 /* udp.c in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6AFC31BA7011F003585A7 /* udp.c */; };
 		8ED6AFD81BA7011F003585A7 /* unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6AFC51BA7011F003585A7 /* unix.c */; };
 		8ED6AFD91BA7011F003585A7 /* usocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6AFC71BA7011F003585A7 /* usocket.c */; };
+		8EE3024E1BB2439000923D95 /* slua.c in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3024D1BB2439000923D95 /* slua.c */; settings = {ASSET_TAGS = (); }; };
 		E8091A131B74553E008FED27 /* lapi.c in Sources */ = {isa = PBXBuildFile; fileRef = E80919F51B74553E008FED27 /* lapi.c */; };
 		E8091A141B74553E008FED27 /* lauxlib.c in Sources */ = {isa = PBXBuildFile; fileRef = E80919F61B74553E008FED27 /* lauxlib.c */; };
 		E8091A151B74553E008FED27 /* lbaselib.c in Sources */ = {isa = PBXBuildFile; fileRef = E80919F71B74553E008FED27 /* lbaselib.c */; };
@@ -69,7 +70,6 @@
 		E8091A2E1B74553E008FED27 /* lvm.c in Sources */ = {isa = PBXBuildFile; fileRef = E8091A101B74553E008FED27 /* lvm.c */; };
 		E8091A2F1B74553E008FED27 /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = E8091A111B74553E008FED27 /* lzio.c */; };
 		E8091A301B74553E008FED27 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = E8091A121B74553E008FED27 /* print.c */; };
-		E8091A321B745553008FED27 /* slua.c in Sources */ = {isa = PBXBuildFile; fileRef = E8091A311B745553008FED27 /* slua.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +134,7 @@
 		8ED6AFC61BA7011F003585A7 /* unix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unix.h; path = "../../luasocket-2.0.2/src/unix.h"; sourceTree = "<group>"; };
 		8ED6AFC71BA7011F003585A7 /* usocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = usocket.c; path = "../../luasocket-2.0.2/src/usocket.c"; sourceTree = "<group>"; };
 		8ED6AFC81BA7011F003585A7 /* usocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = usocket.h; path = "../../luasocket-2.0.2/src/usocket.h"; sourceTree = "<group>"; };
+		8EE3024D1BB2439000923D95 /* slua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = slua.c; path = ../../slua.c; sourceTree = "<group>"; };
 		E80919D41B745519008FED27 /* slua.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = slua.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80919D81B745519008FED27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E80919DE1B74553E008FED27 /* lapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lapi.h; path = ../src/lapi.h; sourceTree = "<group>"; };
@@ -189,7 +190,6 @@
 		E8091A101B74553E008FED27 /* lvm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lvm.c; path = ../src/lvm.c; sourceTree = "<group>"; };
 		E8091A111B74553E008FED27 /* lzio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lzio.c; path = ../src/lzio.c; sourceTree = "<group>"; };
 		E8091A121B74553E008FED27 /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = print.c; path = ../src/print.c; sourceTree = "<group>"; };
-		E8091A311B745553008FED27 /* slua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = slua.c; path = ../../../Assets/slua_src/slua.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,11 +295,11 @@
 		E80919CB1B745519008FED27 = {
 			isa = PBXGroup;
 			children = (
+				8EE3024D1BB2439000923D95 /* slua.c */,
 				8ED6AFAA1BA700FB003585A7 /* luasocket */,
 				8E39FB2E1BA57D8B00B2114F /* cjson */,
 				8E39FADB1BA57B1000B2114F /* lpeg */,
 				8E39FADA1BA57AFB00B2114F /* pbc */,
-				E8091A311B745553008FED27 /* slua.c */,
 				E80919DE1B74553E008FED27 /* lapi.h */,
 				E80919DF1B74553E008FED27 /* lauxlib.h */,
 				E80919E01B74553E008FED27 /* lcode.h */,
@@ -476,6 +476,7 @@
 				8E39FB6A1BA595E200B2114F /* decode.c in Sources */,
 				E8091A1C1B74553E008FED27 /* lgc.c in Sources */,
 				E8091A141B74553E008FED27 /* lauxlib.c in Sources */,
+				8EE3024E1BB2439000923D95 /* slua.c in Sources */,
 				E8091A1A1B74553E008FED27 /* ldump.c in Sources */,
 				E8091A2D1B74553E008FED27 /* lundump.c in Sources */,
 				E8091A251B74553E008FED27 /* loslib.c in Sources */,
@@ -504,7 +505,6 @@
 				E8091A2A1B74553E008FED27 /* ltable.c in Sources */,
 				E8091A171B74553E008FED27 /* ldblib.c in Sources */,
 				8E39FB701BA595E200B2114F /* stringpool.c in Sources */,
-				E8091A321B745553008FED27 /* slua.c in Sources */,
 				8ED6AFCE1BA7011F003585A7 /* inet.c in Sources */,
 				8E39FB671BA595E200B2114F /* array.c in Sources */,
 				E8091A261B74553E008FED27 /* lparser.c in Sources */,

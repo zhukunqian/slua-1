@@ -60,7 +60,7 @@
 		8E013A7D1B9CA51E00F248D8 /* libslua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libslua.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E013A971B9CA52E00F248D8 /* lpeg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lpeg.c; path = ../../lpeg.c; sourceTree = "<group>"; };
 		8E013A981B9CA52E00F248D8 /* lpeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lpeg.h; path = ../../lpeg.h; sourceTree = "<group>"; };
-		8E013A9D1B9CA54D00F248D8 /* slua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = slua.c; path = ../../../Assets/slua_src/slua.c; sourceTree = "<group>"; };
+		8E013A9D1B9CA54D00F248D8 /* slua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = slua.c; path = ../../slua.c; sourceTree = "<group>"; };
 		8E013A9F1B9CA55B00F248D8 /* libslua.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libslua.a; path = ../src/libslua.a; sourceTree = "<group>"; };
 		8E0404331BA881D900C60FB2 /* auxiliar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = auxiliar.c; path = "../../luasocket-2.0.2/src/auxiliar.c"; sourceTree = "<group>"; };
 		8E0404341BA881D900C60FB2 /* auxiliar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = auxiliar.h; path = "../../luasocket-2.0.2/src/auxiliar.h"; sourceTree = "<group>"; };

@@ -8,7 +8,7 @@ mingw32-make BUILDMODE=static CC="gcc -m32"
 copy src\libluajit.a ..\window\x86\libluajit.a /y
 cd ..
 
-gcc ..\Assets\slua_src\slua.c ^
+gcc slua.c ^
 	lpeg.c ^
 	lua-cjson-2.1.0\strbuf.c ^
 	lua-cjson-2.1.0\lua_cjson.c ^

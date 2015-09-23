@@ -16,7 +16,7 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)/sqlite/src
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../
 
 LOCAL_CPPFLAGS := -03 -ffast-math
-LOCAL_SRC_FILES := ../../../Assets/slua_src/slua.c \
+LOCAL_SRC_FILES := ../../slua.c \
 				   ../../lpeg.c \
 				   ../../pbc-master/src/alloc.c \
 				   ../../pbc-master/src/array.c \
