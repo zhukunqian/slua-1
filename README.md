@@ -57,4 +57,8 @@ The shell or bat in the build folder can build the library for specially platfor
 
 2.Add lua-socket library in slua. ( Finished )
 
-3.Add ffi + curl library in slua.
+3.Merge slua v1.x  (Finished)
+
+4.Add sproto library in slua.
+
+5.Add ffi + curl library in slua.
