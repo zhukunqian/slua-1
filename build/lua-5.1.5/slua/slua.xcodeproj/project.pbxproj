@@ -27,6 +27,8 @@
 		8E39FB721BA595E200B2114F /* wmessage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E39FB651BA595E200B2114F /* wmessage.c */; };
 		8E39FB751BA595F600B2114F /* pbc-lua.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E39FB741BA595F600B2114F /* pbc-lua.c */; };
 		8E7B78601B9C2E48005BA995 /* lpeg.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B785E1B9C2E48005BA995 /* lpeg.c */; };
+		8E96E6931BB3ABBF00542AF9 /* lsqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E96E6921BB3ABBF00542AF9 /* lsqlite3.c */; settings = {ASSET_TAGS = (); }; };
+		8E96E6991BB3B36000542AF9 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E96E6951BB3B36000542AF9 /* sqlite3.c */; settings = {ASSET_TAGS = (); }; };
 		8ED6AFCB1BA7011F003585A7 /* auxiliar.c in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6AFAB1BA7011F003585A7 /* auxiliar.c */; };
 		8ED6AFCC1BA7011F003585A7 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6AFAD1BA7011F003585A7 /* buffer.c */; };
 		8ED6AFCD1BA7011F003585A7 /* except.c in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6AFAF1BA7011F003585A7 /* except.c */; };
@@ -111,6 +113,9 @@
 		8E39FB741BA595F600B2114F /* pbc-lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "pbc-lua.c"; path = "../../pbc-master/binding/lua/pbc-lua.c"; sourceTree = "<group>"; };
 		8E7B785E1B9C2E48005BA995 /* lpeg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lpeg.c; path = ../../lpeg.c; sourceTree = "<group>"; };
 		8E7B785F1B9C2E48005BA995 /* lpeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lpeg.h; path = ../../lpeg.h; sourceTree = "<group>"; };
+		8E96E6921BB3ABBF00542AF9 /* lsqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lsqlite3.c; path = "../../lsqlite3-master/lsqlite3.c"; sourceTree = "<group>"; };
+		8E96E6951BB3B36000542AF9 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sqlite3.c; path = "../../sqlite-amalgamation-3081101/sqlite3.c"; sourceTree = "<group>"; };
+		8E96E6961BB3B36000542AF9 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = "../../sqlite-amalgamation-3081101/sqlite3.h"; sourceTree = "<group>"; };
 		8ED6AFAB1BA7011F003585A7 /* auxiliar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = auxiliar.c; path = "../../luasocket-2.0.2/src/auxiliar.c"; sourceTree = "<group>"; };
 		8ED6AFAC1BA7011F003585A7 /* auxiliar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = auxiliar.h; path = "../../luasocket-2.0.2/src/auxiliar.h"; sourceTree = "<group>"; };
 		8ED6AFAD1BA7011F003585A7 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = buffer.c; path = "../../luasocket-2.0.2/src/buffer.c"; sourceTree = "<group>"; };
@@ -273,6 +278,16 @@
 			name = cjson;
 			sourceTree = "<group>";
 		};
+		8E96E6911BB3AB9700542AF9 /* sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				8E96E6951BB3B36000542AF9 /* sqlite3.c */,
+				8E96E6961BB3B36000542AF9 /* sqlite3.h */,
+				8E96E6921BB3ABBF00542AF9 /* lsqlite3.c */,
+			);
+			name = sqlite;
+			sourceTree = "<group>";
+		};
 		8ED6AFAA1BA700FB003585A7 /* luasocket */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +327,7 @@
 		E80919CB1B745519008FED27 = {
 			isa = PBXGroup;
 			children = (
+				8E96E6911BB3AB9700542AF9 /* sqlite */,
 				8E30D6201BB2E78B005B46EF /* sproto */,
 				8EE3024D1BB2439000923D95 /* slua.c */,
 				8ED6AFAA1BA700FB003585A7 /* luasocket */,
@@ -476,6 +492,8 @@
 				8ED6AFCC1BA7011F003585A7 /* buffer.c in Sources */,
 				E8091A2B1B74553E008FED27 /* ltablib.c in Sources */,
 				E8091A1E1B74553E008FED27 /* liolib.c in Sources */,
+				8E96E6931BB3ABBF00542AF9 /* lsqlite3.c in Sources */,
+				8E96E6991BB3B36000542AF9 /* sqlite3.c in Sources */,
 				E8091A281B74553E008FED27 /* lstring.c in Sources */,
 				8ED6AFD81BA7011F003585A7 /* unix.c in Sources */,
 				8E39FB6B1BA595E200B2114F /* map.c in Sources */,

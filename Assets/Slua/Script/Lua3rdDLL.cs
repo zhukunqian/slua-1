@@ -11,6 +11,7 @@ public static class Lua3rdDLL{
 		CjsonLib.Reg(DLLRegFuncs);
 		PbcLib.Reg(DLLRegFuncs);
 		SprotoLib.Reg(DLLRegFuncs);
+		SqliteLib.Reg(DLLRegFuncs);
 	}
 	
 	public static void open(IntPtr L){

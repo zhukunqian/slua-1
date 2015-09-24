@@ -44,6 +44,8 @@
 		8E39FB981BA5963E00B2114F /* varint.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E39FB8A1BA5963E00B2114F /* varint.c */; };
 		8E39FB991BA5963E00B2114F /* wmessage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E39FB8C1BA5963E00B2114F /* wmessage.c */; };
 		8E39FB9C1BA5965100B2114F /* pbc-lua.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E39FB9B1BA5965100B2114F /* pbc-lua.c */; };
+		8E96E69C1BB3B44400542AF9 /* lsqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E96E69B1BB3B44400542AF9 /* lsqlite3.c */; settings = {ASSET_TAGS = (); }; };
+		8E96E69F1BB3B45000542AF9 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E96E69D1BB3B45000542AF9 /* sqlite3.c */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -128,6 +130,9 @@
 		8E39FB8C1BA5963E00B2114F /* wmessage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wmessage.c; path = "../../pbc-master/src/wmessage.c"; sourceTree = "<group>"; };
 		8E39FB9A1BA5964600B2114F /* pbc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pbc.h; path = "../../pbc-master/pbc.h"; sourceTree = "<group>"; };
 		8E39FB9B1BA5965100B2114F /* pbc-lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "pbc-lua.c"; path = "../../pbc-master/binding/lua/pbc-lua.c"; sourceTree = "<group>"; };
+		8E96E69B1BB3B44400542AF9 /* lsqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lsqlite3.c; path = "../../lsqlite3-master/lsqlite3.c"; sourceTree = "<group>"; };
+		8E96E69D1BB3B45000542AF9 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sqlite3.c; path = "../../sqlite-amalgamation-3081101/sqlite3.c"; sourceTree = "<group>"; };
+		8E96E69E1BB3B45000542AF9 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = "../../sqlite-amalgamation-3081101/sqlite3.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +150,7 @@
 		8E013A741B9CA51E00F248D8 = {
 			isa = PBXGroup;
 			children = (
+				8E96E69A1BB3B42D00542AF9 /* sqlite */,
 				8E30D6271BB2E809005B46EF /* sproto */,
 				8E0404321BA881B500C60FB2 /* luasocket */,
 				8E39FB011BA57C8F00B2114F /* lpeg */,
@@ -265,6 +271,16 @@
 			name = lpeg;
 			sourceTree = "<group>";
 		};
+		8E96E69A1BB3B42D00542AF9 /* sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				8E96E69D1BB3B45000542AF9 /* sqlite3.c */,
+				8E96E69E1BB3B45000542AF9 /* sqlite3.h */,
+				8E96E69B1BB3B44400542AF9 /* lsqlite3.c */,
+			);
+			name = sqlite;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -336,6 +352,7 @@
 				8E39FB8F1BA5963E00B2114F /* bootstrap.c in Sources */,
 				8E013A9E1B9CA54D00F248D8 /* slua.c in Sources */,
 				8E0404551BA881D900C60FB2 /* except.c in Sources */,
+				8E96E69C1BB3B44400542AF9 /* lsqlite3.c in Sources */,
 				8E39FB981BA5963E00B2114F /* varint.c in Sources */,
 				8E39FB941BA5963E00B2114F /* proto.c in Sources */,
 				8E0404571BA881D900C60FB2 /* io.c in Sources */,
@@ -345,6 +362,7 @@
 				8E04045B1BA881D900C60FB2 /* options.c in Sources */,
 				8E39FB931BA5963E00B2114F /* pattern.c in Sources */,
 				8E013A991B9CA52E00F248D8 /* lpeg.c in Sources */,
+				8E96E69F1BB3B45000542AF9 /* sqlite3.c in Sources */,
 				8E04045D1BA881D900C60FB2 /* tcp.c in Sources */,
 				8E39FB9C1BA5965100B2114F /* pbc-lua.c in Sources */,
 				8E39FB8E1BA5963E00B2114F /* array.c in Sources */,

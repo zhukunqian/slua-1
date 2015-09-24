@@ -13,7 +13,8 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../pbc-master
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../lua-cjson-2.1.0
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../luasocket-2.0.2
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../sproto-master
-LOCAL_C_INCLUDES += $(LOCAL_PATH)/sqlite/src
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../sqlite-amalgamation-3081101
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../lsqlite3-master
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../
 
 LOCAL_CPPFLAGS := -03 -ffast-math
@@ -52,8 +53,8 @@ LOCAL_SRC_FILES := ../../slua.c \
 				   ../../luasocket-2.0.2/src/usocket.c \
 				   ../../sproto-master/lsproto.c \
 				   ../../sproto-master/sproto.c \
-				   ./sqlite/src/sqlite3.c \
-				   ./sqlite/lsqlite3.c 
+				   ../../sqlite-amalgamation-3081101/sqlite3.c \
+				   ../../lsqlite3-master/lsqlite3.c 
 
 LOCAL_WHOLE_STATIC_LIBRARIES += libluajit
 include $(BUILD_SHARED_LIBRARY)

@@ -42,6 +42,8 @@ gcc slua.c ^
 	luasocket-2.0.2/src/wsocket.c ^
 	sproto-master/lsproto.c ^
 	sproto-master/sproto.c ^
+	lsqlite3-master/lsqlite3.c ^
+	sqlite-amalgamation-3081101/sqlite3.c ^
 	-o window/x86/slua.dll -m32 -shared ^
 	-I.\ ^
 	-Ilua-cjson-2.1.0 ^
@@ -49,6 +51,8 @@ gcc slua.c ^
 	-Ipbc-win ^
 	-Iluasocket-2.0.2 ^
 	-Isproto-master ^
+	-Ilsqlite3-master ^
+	-Isqlite-amalgamation-3081101 ^
 	-Wl,--whole-archive window\x86\libluajit.a ^
 	-Wl,--no-whole-archive -lwsock32 -static-libgcc -static-libstdc++
 

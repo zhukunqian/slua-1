@@ -115,9 +115,15 @@ namespace LuaInterface
 		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 		public static extern int luaopen_mime_core(IntPtr luaState);
 
+		//sproto
 		[DllImport(LUADLL, CallingConvention = CallingConvention.Cdecl)]
 		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 		public static extern int luaopen_sproto_core(IntPtr luaState);
+
+		//sqlite
+		[DllImport(LUADLL, CallingConvention = CallingConvention.Cdecl)]
+		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+		public static extern int luaopen_lsqlite3(IntPtr luaState);
 
 		[DllImport(LUADLL, CallingConvention = CallingConvention.Cdecl)]
 		public static extern void luaS_openextlibs(IntPtr L);
