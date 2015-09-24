@@ -10,7 +10,7 @@ namespace SLua
 	{
 		public static void Reg(Dictionary<string, LuaCSFunction> reg_functions)
 		{
-			reg_functions.Add("sqlite3",LuaDLL.luaopen_lsqlite3);
+			reg_functions.Add("lsqlite3",LuaDLL.luaopen_lsqlite3);
 		}
 	}
 }
