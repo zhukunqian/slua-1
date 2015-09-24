@@ -1,5 +1,5 @@
-obj/local/armeabi-v7a/objs/slua/./sqlite/src/sqlite3.o: \
- jni/./sqlite/src/sqlite3.c \
+obj/local/armeabi-v7a/objs/slua/__/__/sqlite-amalgamation-3081101/sqlite3.o: \
+ jni/../../sqlite-amalgamation-3081101/sqlite3.c \
  /Users/luzexi/Desktop/work/_Environment/android-ndk-r9/platforms/android-3/arch-arm/usr/include/stdio.h \
  /Users/luzexi/Desktop/work/_Environment/android-ndk-r9/platforms/android-3/arch-arm/usr/include/sys/cdefs.h \
  /Users/luzexi/Desktop/work/_Environment/android-ndk-r9/platforms/android-3/arch-arm/usr/include/sys/cdefs_elf.h \

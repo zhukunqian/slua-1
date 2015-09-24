@@ -1,5 +1,5 @@
-obj/local/armeabi-v7a/objs/slua/./sqlite/lsqlite3.o: \
- jni/./sqlite/lsqlite3.c \
+obj/local/armeabi-v7a/objs/slua/__/__/lsqlite3-master/lsqlite3.o: \
+ jni/../../lsqlite3-master/lsqlite3.c \
  /Users/luzexi/Desktop/work/_Environment/android-ndk-r9/platforms/android-3/arch-arm/usr/include/stdlib.h \
  /Users/luzexi/Desktop/work/_Environment/android-ndk-r9/platforms/android-3/arch-arm/usr/include/sys/cdefs.h \
  /Users/luzexi/Desktop/work/_Environment/android-ndk-r9/platforms/android-3/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -32,7 +32,7 @@ obj/local/armeabi-v7a/objs/slua/./sqlite/lsqlite3.o: \
  /Users/luzexi/Desktop/work/_Environment/android-ndk-r9/platforms/android-3/arch-arm/usr/include/asm/page.h \
  jni/luajit/src/lauxlib.h \
  /Users/luzexi/Desktop/work/_Environment/android-ndk-r9/platforms/android-3/arch-arm/usr/include/stdio.h \
- jni/luajit/src/lua.h jni/sqlite/src/sqlite3.h
+ jni/luajit/src/lua.h jni/../../sqlite-amalgamation-3081101/sqlite3.h
 
 /Users/luzexi/Desktop/work/_Environment/android-ndk-r9/platforms/android-3/arch-arm/usr/include/stdlib.h:
 
@@ -102,4 +102,4 @@ jni/luajit/src/lauxlib.h:
 
 jni/luajit/src/lua.h:
 
-jni/sqlite/src/sqlite3.h:
+jni/../../sqlite-amalgamation-3081101/sqlite3.h:
