@@ -19,3 +19,8 @@ The test scripts is 'testclnt.txt'. The test file copy from lua-scoket. If you w
 The path of sproto example is Assets/Slua/example/example-sproto/sproto-test.unity.
 
 The test contain 3 files sprotoTest/test.txt , sprotoTest/testall.txt , sprotoTest/pbc.txt , all of these files from sproto project.
+
+###sqlite
+The path of sproto example is Assets/Slua/example/example-sqlite/sqlite-test.unity.
+
+The test contain 2 files sqliteTest/test.txt , sqliteTest/tests-sqlite3.txt , all of them from lsqlite project.

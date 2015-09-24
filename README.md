@@ -6,7 +6,7 @@ Introduction slua [Document](slua_README.md)
 ###What's different
 This fork integrate with 3rd Lua library.
 
-We already have pbc , lpeg , cjson , lua-socket , sproto librarys and more and more in the future.
+We already have pbc , lpeg , cjson , lua-socket , sproto , sqlite librarys and more and more in the future.
 
 The library is already been test in Mac , Iphone , Android , Windows.
 
@@ -30,6 +30,8 @@ MinGW be a submodule in this repo and about 300 MB , If you have to build dll in
 4.lua-socket (http://w3.impa.br/~diego/software/luasocket/home.html) is a Lua extension library that is composed by two parts: a C core that provides support for the TCP and UDP transport layers, and a set of Lua modules that add support for functionality commonly needed by applications that deal with the Internet.
 
 5.sproto (https://github.com/cloudwu/sproto) is an efficient serialization library for C, and focuses on lua binding. It's like Google protocol buffers, but much faster.
+
+6.sqlite (https://github.com/LuaDist/lsqlite3) is a software library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine. 
 
 ##How to use slua in unity3d.
 See inner demo for help or [Document](doc.md) (in chinese).
@@ -63,6 +65,6 @@ The shell or bat in the build folder can build the library for specially platfor
 
 4.Add sproto library in slua. ( Finished )
 
-5.Add LuaSQLite library in slua.
+5.Add sqlite library in slua. ( Finished )
 
 6.Add ffi + curl library in slua.
