@@ -63,4 +63,6 @@ The shell or bat in the build folder can build the library for specially platfor
 
 4.Add sproto library in slua. ( Finished )
 
-5.Add ffi + curl library in slua.
+5.Add LuaSQLite library in slua.
+
+6.Add ffi + curl library in slua.
