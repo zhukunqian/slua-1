@@ -14,6 +14,7 @@ Website: http://www.luzexi.com
 
 Email: jesse_luzexi@163.com
 
+中文请看 http://www.luzexi.com/unity3d%E4%B9%8Bslua%E9%9B%86%E6%88%90%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/
 
 ###MinGW for windows build
 MinGW , a contraction of "Minimalist GNU for Windows", is a minimalist development environment for native Microsoft Windows applications.
