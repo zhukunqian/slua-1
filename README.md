@@ -35,7 +35,7 @@ MinGW be a submodule in this repo and about 300 MB , If you have to build dll in
 6.sqlite (https://github.com/LuaDist/lsqlite3) is a software library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine. 
 
 ##How to use slua in unity3d.
-See inner demo for help or [Document](doc.md) (in chinese).
+See inner demo for help or [Document][https://github.com/pangweiwei/slua/wiki/%E4%B8%AD%E6%96%87%E5%B8%AE%E5%8A%A9] (in chinese).
 
 ##How to use 3rd library in unity3d.
 See inner demo for help.
