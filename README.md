@@ -93,4 +93,6 @@ The shell or bat in the build folder can build the library for specially platfor
 
 5.Add sqlite library in slua. ( Finished )
 
-6.Add ffi + curl library in slua.
+6.Add Int64 in slua.
+
+7.Add curl library in slua.
