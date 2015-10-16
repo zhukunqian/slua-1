@@ -491,6 +491,7 @@ namespace SLua
 			public int r;
 		}
 		Queue<UnrefPair> refQueue;
+		public int PCallCSFunctionRef = 0;
 
 
 		public static LuaState main;
@@ -498,7 +499,6 @@ namespace SLua
 		static IntPtr oldptr = IntPtr.Zero;
 		static LuaState oldstate = null;
 		static public LuaCSFunction errorFunc = new LuaCSFunction(errorReport);
-		static public int PCallCSFunctionRef = 0;
 
 		public bool isMainThread()
 		{
@@ -569,7 +569,6 @@ end
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
         static int init(IntPtr L)
         {
-
             LuaDLL.lua_pushlightuserdata(L, L);
             LuaDLL.lua_setglobal(L, "__main_state");
 
@@ -579,7 +578,7 @@ end
             LuaDLL.lua_pushcfunction(L, pcall);
             LuaDLL.lua_setglobal(L, "pcall");
 
-            LuaDLL.lua_pushcsfunction(L, import);
+            pushcsfunction(L, import);
             LuaDLL.lua_setglobal(L, "import");
 
 
@@ -597,13 +596,13 @@ end
 			// overload resume function for report error
 			LuaState.get(L).doString(resumefunc);
 			
-            LuaDLL.lua_pushcsfunction(L, dofile);
+			pushcsfunction(L, dofile);
             LuaDLL.lua_setglobal(L, "dofile");
 
-            LuaDLL.lua_pushcsfunction(L, loadfile);
+			pushcsfunction(L, loadfile);
             LuaDLL.lua_setglobal(L, "loadfile");
 
-            LuaDLL.lua_pushcsfunction(L, loader);
+			pushcsfunction(L, loader);
             int loaderFunc = LuaDLL.lua_gettop(L);
 
             LuaDLL.lua_getglobal(L, "package");
@@ -631,20 +630,28 @@ end
 			if (L != IntPtr.Zero)
 			{
 				if (LuaState.main == this)
-					LuaState.main = null;
+				{
+					Debug.Log("Finalizing Lua State.");
+					// be careful, if you close lua vm, make sure you don't use lua state again,
+					// comment this line as default for avoid unexpected crash.
+					LuaDLL.lua_close(L);
 
-				Debug.Log("Finalizing Lua State.");
-				// be careful, if you close lua vm, make sure you don't use lua state again,
-				// comment this line as default for avoid unexpected crash.
-				// LuaDLL.lua_close(L);
-				// L = IntPtr.Zero;
+					ObjectCache.del(L);
+					ObjectCache.clear();
+
+					statemap.Clear();
+					oldptr = IntPtr.Zero;
+					oldstate = null;
+					L = IntPtr.Zero;
+
+					LuaState.main = null;
+				}
 			}
 		}
 
 		public void Dispose()
 		{
 			Dispose(true);
-			ObjectCache.del(L);
 			System.GC.Collect();
 			System.GC.WaitForPendingFinalizers();
 		}
@@ -815,6 +822,13 @@ end
 			throw new Exception (reason);
 		}
 
+		static public void pushcsfunction(IntPtr L, LuaCSFunction function)
+		{
+			LuaDLL.lua_getref(L, get(L).PCallCSFunctionRef);
+			LuaDLL.lua_pushcclosure(L, Marshal.GetFunctionPointerForDelegate(function),0);
+			LuaDLL.lua_call(L, 1, 1);
+		}
+
 		public object doString(string str)
 		{
 			byte[] bytes = Encoding.UTF8.GetBytes(str);
@@ -911,7 +925,7 @@ end
 					bytes = asset.bytes;
 				}
 
-				DebugInterface.require(fn, bytes);
+				if(bytes!=null) DebugInterface.require(fn, bytes);
 				return bytes;
 			}
 			catch (Exception e)

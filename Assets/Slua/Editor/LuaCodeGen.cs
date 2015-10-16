@@ -401,9 +401,8 @@ namespace SLua
             "WWW.movie",
             "WebCamTexture.MarkNonReadable",
             "WebCamTexture.isReadable",
-            // i don't why below 2 functions missed in iOS platform
-            "Graphic.OnRebuildRequested",
-            "Text.OnRebuildRequested",
+            // i don't know why below 2 functions missed in iOS platform
+            "*.OnRebuildRequested",
             // il2cpp not exixts
             "Application.ExternalEval",
             "GameObject.networkView",
@@ -871,7 +870,7 @@ namespace SLua
 		
 		bool MemberInFilter(Type t, MemberInfo mi)
 		{
-			return memberFilter.Contains(t.Name + "." + mi.Name);
+			return memberFilter.Contains(t.Name + "." + mi.Name) || memberFilter.Contains("*." + mi.Name);
 		}
 		
 		bool IsObsolete(MemberInfo t)
@@ -1782,17 +1781,7 @@ namespace SLua
 			if (t.IsByRef) {
 				t = t.GetElementType();
 			}
-			return t.IsPrimitive
-				|| t == typeof(Color)
-				|| t == typeof(Vector2)
-				|| t == typeof(Vector3)
-				|| t == typeof(Vector4)
-				|| t == typeof(Quaternion)
-				|| t.Name == "Color2&"
-				|| t.Name == "Vector2&"
-				|| t.Name == "Vector3&"
-				|| t.Name == "Vector4&"
-				|| t.Name == "Quaternion&";
+			return t.IsPrimitive || LuaObject.isImplByLua(t);
 		}
 		
 		string FullName(string str)

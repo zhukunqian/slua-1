@@ -36,6 +36,7 @@ do
 	local stepOverDepth = nil
 	local stackDepth = 0
 	local breakMode = false
+	local baseStack = 7
 
     local function print(str)
     	outputConsole(str)
@@ -47,6 +48,18 @@ do
 
 	local function closeDebug()
 		debug.sethook(nil)
+	end
+
+	local function getCallDepth()
+		local deep = 2
+		local info = nil
+		repeat 
+			info = debug.getinfo(deep)
+			if info then
+				deep = deep + 1
+			end
+		until not(info)
+		return deep - 2
 	end
 
 	function Slua.ldb.delBreakPoint(index)
@@ -84,7 +97,7 @@ do
 	end
 
 	function Slua.ldb.bt()
-		local tb = debug.traceback('Traceback:',5)
+		local tb = debug.traceback('Traceback:',baseStack)
 		tb = string.gsub(tb,'\n','\r\n')
 		print( tb )
 	end
@@ -97,7 +110,7 @@ do
 			if jit then
 				level = getCallDepth() - stackDepth + 2
 			else
-				level = 5
+				level = baseStack
 			end
 			local upvalueIndex = {}
 			--copy upvalue
@@ -349,24 +362,12 @@ do
 		breakMode = true
 	end
 
-	local function getCallDepth()
-		local deep = 2
-		local info = nil
-		repeat 
-			info = debug.getinfo(deep)
-			if info then
-				deep = deep + 1
-			end
-		until not(info)
-		return deep - 2
-	end
-
 	function Slua.ldb.watch()
 		local level
 		if jit then
 			level = getCallDepth() - stackDepth + 2
 		else
-			level = 5
+			level = baseStack
 		end
 
 		--show upvalue
