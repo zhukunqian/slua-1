@@ -279,7 +279,7 @@ do
 	end
 
 	function Vector3.Angle(a,b)
-		local dot = Dot(Vector3.Normalize(a), Vector3.Normalize(b))
+		local dot = Vector3.Dot(Vector3.Normalize(a), Vector3.Normalize(b))
 		return acos(dot)*ToAngle
 	end
 
@@ -500,7 +500,7 @@ do
 	        newv = (vector4 - vector2) / deltaTime
 	    end
 	    currentVelocity:Set(newv.x,newv.y,newv.z)
-	    return vector4
+	    return vector4,currentVelocity
 	end
 
 	-- code copy from reflactor of UnityEgnine
