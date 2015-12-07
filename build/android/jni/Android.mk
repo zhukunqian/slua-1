@@ -17,7 +17,7 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../sqlite-amalgamation-3081101
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../lsqlite3-master
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../
 
-LOCAL_CPPFLAGS := -03 -ffast-math
+LOCAL_CPPFLAGS := -O3 -ffast-math
 LOCAL_SRC_FILES := ../../slua.c \
 				   ../../lpeg.c \
 				   ../../pbc-master/src/alloc.c \
